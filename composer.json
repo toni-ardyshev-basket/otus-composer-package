@@ -13,6 +13,8 @@
         }
     ],
     "require": {
+        "ext-intl": "*",
+        "ext-mbstring": "*",
         "php": ">=8.0"
     }
 }
