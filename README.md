@@ -12,10 +12,18 @@ $ composer require toni-ardyshev-basket/otus-composer-package
 ```php
 $processor = new TransliteratorProcessor();
 $text = 'Ёж съел очень вкусный ужин';
-$type = 'Russian-Latin/BGN';
-$options = 'ë > yo';
+$options = 'ё > yo';
 
-echo $processor->transliterate($text, $type, $options);
+echo $processor->transliterate($text, $options);
 ```
+$options  - необязательный параметр
 
-$options - не обязательный параметр
+### Генератор ЧПУ ссылок
+
+Данное приложение используется для транслитерации русского языка на латынь.
+Символы пробел и нижнее подчеркивание('_') заменяется на дефис('-').
+Символы не буквенно-цифрового выражения удаляются.
+
+
+
+
