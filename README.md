@@ -5,7 +5,7 @@
 ## Установка 
 
 ```bash
-$ composer require toni-ardyshev-basket/otus-composer-package
+$ composer require anton-ardyshev/otus-composer-package
 ```
 ## Использование
 
