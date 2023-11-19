@@ -13,7 +13,7 @@ class TransliteratorProcessor
         $text = mb_strtolower($text);
 
         if (!$options) {
-            $options = 'ё > yo; ц > c; х > h;';
+            $options = 'ё > yo; ц > c; х > h; е > e;';
         }
 
         $rules =  $options . '::Russian-Latin/BGN; ::NFD; ::Latin-ASCII; ::NFC;';
